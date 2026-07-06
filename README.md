@@ -1,5 +1,5 @@
 # 💫 About Me:
-Software developer and Information Systems student at the University of Belgrade (FON). Currently a Software Developer Intern at Code IT, where I contribute to production web applications and backend systems. My core stack includes C, Python, and React, complemented by experience with Supabase, Stripe, and Solana. Beyond client work, I'm developing ChainTrust — a Solana-based startup verification platform — and have delivered projects ranging from e-commerce platforms to an internal portal for a pharmaceutical company with 1,000+ employees.
+Software developer and Information Systems student at the University of Belgrade (FON). Currently a Software Developer Intern at Code IT, where I contribute to production web applications and backend systems. My core stack includes C, Python, and React, complemented by experience with Supabase, Stripe, and Solana. Beyond client work, I'm developing ChainTrust — a Solana-based startup verification platform — and have delivered projects ranging from e-commerce platforms to an internal portal for a pharmaceutical company with 3,000+ employees.
 
 
 ## 🌐 Socials:
