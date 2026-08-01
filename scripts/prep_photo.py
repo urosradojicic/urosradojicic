@@ -74,6 +74,15 @@ def crop_to_subject(img, alpha):
     height = int((bottom - top) * KEEP)
     width = int(height * TARGET_ASPECT)
 
+    # A tall source frame cannot always supply the width the aspect asks for —
+    # a 688px-wide photo needs 741px to pair with a 628px-tall crop. Shrink to
+    # the largest correctly proportioned box that fits rather than clamping the
+    # width alone, which would silently change the aspect and leave the
+    # portrait taller than the card it sits beside.
+    if width > img.width:
+        width = img.width
+        height = int(width / TARGET_ASPECT)
+
     # Centre horizontally on the head rather than the whole silhouette: the
     # shoulders are wider and would pull the face off-centre.
     head_band = alpha[top:top + max(1, (bottom - top) // 5)]

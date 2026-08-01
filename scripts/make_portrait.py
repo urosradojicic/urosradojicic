@@ -68,9 +68,25 @@ def tone(b):
             Steepens around mid-grey and clips the ends. Strongest facial
             definition of the four, harshest everywhere else.
 
-    Change it, re-run, look at the result. It takes about ten seconds a try.
+    Measured on the real photo, over the face region of the 96x41 grid:
+
+        curve       glyphs  entropy  blank%  darkest%
+        linear          13     3.18    57.2       7.4
+        gamma .7        13     3.15    57.7       2.7
+        S-curve         13     3.12    60.1      15.0
+        pivot 1.4       13     3.04    61.4      16.0
+
+    Linear wins on entropy and loses anyway. At 365px wide, 96 columns leaves
+    about 3.8px per character, and gradation that fine is invisible — what
+    survives at that size is the silhouette. gamma 0.7 is the clearest failure:
+    darkest 2.7% means the hair and jacket stop reading as solid and the head
+    loses its outline.
+
+    The S-curve is in place because it holds the hair as one dark mass while
+    keeping modelling around the eyes and nose. Swap the return below and
+    re-run to try another; it takes about ten seconds.
     """
-    return b        # <-- linear placeholder. Replace me.
+    return b * b * (3 - 2 * b)      # smoothstep
 # ---------------------------------------------------------------------------
 
 
@@ -123,7 +139,7 @@ def main():
     svg, cols, rows, height = build(img)
     OUT.write_text(svg, encoding="utf-8")
 
-    shown_w = 368       # the width README.md asks for; verify.py checks this
+    shown_w = 365       # the width README.md asks for; verify.py checks this
     shown_h = height * shown_w / NAT_W
     print(f"{OUT.name}  ·  {cols}x{rows} glyphs  ·  {NAT_W}x{height:.0f} natural")
     print(f"renders {shown_w}x{shown_h:.0f} in the README")

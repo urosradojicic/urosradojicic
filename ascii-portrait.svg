@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="618" height="567"
+     viewBox="0 0 618 567" role="img" aria-label="ASCII portrait of Uros Radojicic">
+  <title>ASCII portrait of Uros Radojicic</title>
+  <style>
+    text { font-family: ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,'Liberation Mono','DejaVu Sans Mono',monospace; white-space: pre; }
+    @keyframes wipe {
+      from { clip-path: inset(0 100% 0 0); }
+      to   { clip-path: inset(0 0 0 0); }
+    }
+    @keyframes fade {
+      from { opacity: 0; transform: translateY(4px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes pop {
+      from { opacity: 0; transform: translateY(-3px) scale(0.72); }
+      to   { opacity: 1; transform: translateY(0) scale(1); }
+    }
+    .wipe { animation: wipe .22s steps(24) both 1; }
+    .fade { animation: fade .34s ease-out both 1; }
+    /* transform-box: fill-box is load-bearing. Without it a percentage
+       transform-origin on an SVG shape resolves against the SVG root's origin,
+       so `scale` throws the cell across the canvas instead of growing it in
+       place. */
+    .pop  { animation: pop .3s ease-out both 1;
+             transform-box: fill-box; transform-origin: center; }
+
+    /* Readers who ask for reduced motion get the finished frame immediately. */
+    @media (prefers-reduced-motion: reduce) {
+      .wipe, .fade, .pop { animation-duration: 1ms !important;
+                            animation-delay: 0ms !important; }
+    }
+  </style>
+  <rect x="0.5" y="0.5" width="617" height="566.125" rx="9"
+        fill="#0d1117" stroke="#30363d"/>
+  <path d="M0.5 9.5a9 9 0 0 1 9-9h599a9 9 0 0 1 9 9v25H0.5z"
+        fill="#161b22"/>
+  <line x1="0.5" y1="34" x2="617.5" y2="34" stroke="#30363d"/>
+  <circle cx="18" cy="17.0" r="5.5" fill="#ff5f56"/><circle cx="36" cy="17.0" r="5.5" fill="#ffbd2e"/><circle cx="54" cy="17.0" r="5.5" fill="#27c93f"/>
+  <text x="309.0" y="21.0" text-anchor="middle"
+        font-family="ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,'Liberation Mono','DejaVu Sans Mono',monospace" font-size="11.5" fill="#8b949e">portrait.sh</text>
+  <text class="wipe" style="animation-delay:0ms" x="18" y="61.46" xml:space="preserve" textLength="582" lengthAdjust="spacing" font-size="10.10" fill="#adbac7">                                                                                                </text>
+  <text class="wipe" style="animation-delay:17ms" x="18" y="73.58" xml:space="preserve" textLength="582" lengthAdjust="spacing" font-size="10.10" fill="#adbac7">                                                                                                </text>
+  <text class="wipe" style="animation-delay:34ms" x="18" y="85.71" xml:space="preserve" textLength="582" lengthAdjust="spacing" font-size="10.10" fill="#adbac7">                                         `:.``.                                                 </text>
+  <text class="wipe" style="animation-delay:51ms" x="18" y="97.83" xml:space="preserve" textLength="582" lengthAdjust="spacing" font-size="10.10" fill="#adbac7">                                    .:-c%@@%@%%%###c*=:.                                        </text>
+  <text class="wipe" style="animation-delay:68ms" x="18" y="109.96" xml:space="preserve" textLength="582" lengthAdjust="spacing" font-size="10.10" fill="#adbac7">                                  `s%@@@@@@@@@@@@@@@@@@@%s:                                     </text>
+  <text class="wipe" style="animation-delay:85ms" x="18" y="122.08" xml:space="preserve" textLength="582" lengthAdjust="spacing" font-size="10.10" fill="#adbac7">                                :#@@@@@@@@@@@@@@@@@@@@@@@@@s`                                   </text>
+  <text class="wipe" style="animation-delay:102ms" x="18" y="134.21" xml:space="preserve" textLength="582" lengthAdjust="spacing" font-size="10.10" fill="#adbac7">                              .c@@@@@@@@@@@@@@@@@@@@@@@@@@@@@s.                                 </text>
+  <text class="wipe" style="animation-delay:119ms" x="18" y="146.33" xml:space="preserve" textLength="582" lengthAdjust="spacing" font-size="10.10" fill="#adbac7">                             +@@%@@@@@@@@@@@@@@@@@@@@@@@@@@@@@%.                                </text>
+  <text class="wipe" style="animation-delay:136ms" x="18" y="158.46" xml:space="preserve" textLength="582" lengthAdjust="spacing" font-size="10.10" fill="#adbac7">                            s@@@%%%@@@@@@@@@@@@@@@@@@@@@@@@@@@@%                                </text>
+  <text class="wipe" style="animation-delay:153ms" x="18" y="170.58" xml:space="preserve" textLength="582" lengthAdjust="spacing" font-size="10.10" fill="#adbac7">                           #@%@@%%##%%%#%%%@%###s#%%@@%#%@@@@@@#                                </text>
+  <text class="wipe" style="animation-delay:170ms" x="18" y="182.71" xml:space="preserve" textLength="582" lengthAdjust="spacing" font-size="10.10" fill="#adbac7">                          `@@@@@%s=++=++*##c:``:::::=*++*#@@@@@+                                </text>
+  <text class="wipe" style="animation-delay:187ms" x="18" y="194.83" xml:space="preserve" textLength="582" lengthAdjust="spacing" font-size="10.10" fill="#adbac7">                           #@@@@c:``.`````:`````````::-=+*s@@@@=                                </text>
+  <text class="wipe" style="animation-delay:204ms" x="18" y="206.96" xml:space="preserve" textLength="582" lengthAdjust="spacing" font-size="10.10" fill="#adbac7">                           `%@%#-::`````````````````:--=+*c%@@#                                 </text>
+  <text class="wipe" style="animation-delay:221ms" x="18" y="219.08" xml:space="preserve" textLength="582" lengthAdjust="spacing" font-size="10.10" fill="#adbac7">                            -%%%+:::`.......```...``:-=++*+#@@s                                 </text>
+  <text class="wipe" style="animation-delay:238ms" x="18" y="231.21" xml:space="preserve" textLength="582" lengthAdjust="spacing" font-size="10.10" fill="#adbac7">                             *@#-`:::::::````````:=ccccccc+*%@*                                 </text>
+  <text class="wipe" style="animation-delay:255ms" x="18" y="243.33" xml:space="preserve" textLength="582" lengthAdjust="spacing" font-size="10.10" fill="#adbac7">                              ss``:--+*ssc+-:`::+s####c****+#%-`.                               </text>
+  <text class="wipe" style="animation-delay:272ms" x="18" y="255.46" xml:space="preserve" textLength="582" lengthAdjust="spacing" font-size="10.10" fill="#adbac7">                             .`c:`:-+sc##ss*=``-ss*+sccs*===c*=sc                               </text>
+  <text class="wipe" style="animation-delay:289ms" x="18" y="267.58" xml:space="preserve" textLength="582" lengthAdjust="spacing" font-size="10.10" fill="#adbac7">                            .c==:``:::::-=-::.`:+=--::::::-=+*=++                               </text>
+  <text class="wipe" style="animation-delay:306ms" x="18" y="279.71" xml:space="preserve" textLength="582" lengthAdjust="spacing" font-size="10.10" fill="#adbac7">                             +---:`...````....`:==-:````::-=+*+=.                               </text>
+  <text class="wipe" style="animation-delay:323ms" x="18" y="291.83" xml:space="preserve" textLength="582" lengthAdjust="spacing" font-size="10.10" fill="#adbac7">                              =+-:``.`````.....:-+=:````::-=++=:                                </text>
+  <text class="wipe" style="animation-delay:340ms" x="18" y="303.96" xml:space="preserve" textLength="582" lengthAdjust="spacing" font-size="10.10" fill="#adbac7">                              .==::```````:`````-++:````:-=+**+                                 </text>
+  <text class="wipe" style="animation-delay:357ms" x="18" y="316.08" xml:space="preserve" textLength="582" lengthAdjust="spacing" font-size="10.10" fill="#adbac7">                               .+=::```````:==-=cc=::::::-=**-.                                 </text>
+  <text class="wipe" style="animation-delay:374ms" x="18" y="328.21" xml:space="preserve" textLength="582" lengthAdjust="spacing" font-size="10.10" fill="#adbac7">                                .`-:::````...`:::--:::----=c-                                   </text>
+  <text class="wipe" style="animation-delay:391ms" x="18" y="340.33" xml:space="preserve" textLength="582" lengthAdjust="spacing" font-size="10.10" fill="#adbac7">                                  .-::```:=--==++****----=++                                    </text>
+  <text class="wipe" style="animation-delay:408ms" x="18" y="352.46" xml:space="preserve" textLength="582" lengthAdjust="spacing" font-size="10.10" fill="#adbac7">                                   `-::`:-=---==-=++=::-=+c=                                    </text>
+  <text class="wipe" style="animation-delay:425ms" x="18" y="364.58" xml:space="preserve" textLength="582" lengthAdjust="spacing" font-size="10.10" fill="#adbac7">                                   .+-:::```::--=-----==+*c=                                    </text>
+  <text class="wipe" style="animation-delay:442ms" x="18" y="376.71" xml:space="preserve" textLength="582" lengthAdjust="spacing" font-size="10.10" fill="#adbac7">                                   .+==-:::::::::::::-=+*c*+                                    </text>
+  <text class="wipe" style="animation-delay:459ms" x="18" y="388.83" xml:space="preserve" textLength="582" lengthAdjust="spacing" font-size="10.10" fill="#adbac7">                                   `=-=+=-::``````::-+*cc++*                                    </text>
+  <text class="wipe" style="animation-delay:476ms" x="18" y="400.96" xml:space="preserve" textLength="582" lengthAdjust="spacing" font-size="10.10" fill="#adbac7">                                 .`=---=++==-:---:-=*cc*+==+:                                   </text>
+  <text class="wipe" style="animation-delay:493ms" x="18" y="413.08" xml:space="preserve" textLength="582" lengthAdjust="spacing" font-size="10.10" fill="#adbac7">                                *s +-:::---=====+++***+----+.::                                 </text>
+  <text class="wipe" style="animation-delay:510ms" x="18" y="425.21" xml:space="preserve" textLength="582" lengthAdjust="spacing" font-size="10.10" fill="#adbac7">                             .+%@` =+:::::::------===-::::=` -@c.                               </text>
+  <text class="wipe" style="animation-delay:527ms" x="18" y="437.33" xml:space="preserve" textLength="582" lengthAdjust="spacing" font-size="10.10" fill="#adbac7">                       .`=*s%@@@c  .*-::``:::::::---:::::=:  :@@@%c-.                           </text>
+  <text class="wipe" style="animation-delay:544ms" x="18" y="449.46" xml:space="preserve" textLength="582" lengthAdjust="spacing" font-size="10.10" fill="#adbac7">                  .:*#%@@@@@@@@@-   -=-::``::::::::::::::` . `@@@@@@@%s*:.                      </text>
+  <text class="wipe" style="animation-delay:561ms" x="18" y="461.58" xml:space="preserve" textLength="582" lengthAdjust="spacing" font-size="10.10" fill="#adbac7">             .:+s%@@@@@@@@@@@@@@`   .=-::::``::::::````.  `:-.%@@@@@@@@@@@%s+`                  </text>
+  <text class="wipe" style="animation-delay:578ms" x="18" y="473.71" xml:space="preserve" textLength="582" lengthAdjust="spacing" font-size="10.10" fill="#adbac7">      .:-+s%@@@@@@@@@@@@@@@@@@@@.    `-::::``````````. ....`:.s@@@@@@@@@@@@@@@@#+:.             </text>
+  <text class="wipe" style="animation-delay:595ms" x="18" y="485.83" xml:space="preserve" textLength="582" lengthAdjust="spacing" font-size="10.10" fill="#adbac7">   =#%@@@@@@@@@@@@@@@@@@@@@@@@@% `:`   :::```````````. .....` *@@@@@@@@@@@@@@@@@@@@%%s+:.       </text>
+  <text class="wipe" style="animation-delay:612ms" x="18" y="497.96" xml:space="preserve" textLength="582" lengthAdjust="spacing" font-size="10.10" fill="#adbac7">  s@@@@@@@@@@@@@@@@@@@@@@@@@@@@%.::.   .`:```.``````. ..  .  .=@@@@@@@@@@@@@@@@@@@@@@@@@@%s`    </text>
+  <text class="wipe" style="animation-delay:629ms" x="18" y="510.08" xml:space="preserve" textLength="582" lengthAdjust="spacing" font-size="10.10" fill="#adbac7">  %@@@@@@@@@@@@@@@@@@@@@@@@@@@@%`. .. `. .`:``````` ...   .   :@@@@@@@@@@@@@@@@@@@@@@@@@@@@@    </text>
+  <text class="wipe" style="animation-delay:646ms" x="18" y="522.21" xml:space="preserve" textLength="582" lengthAdjust="spacing" font-size="10.10" fill="#adbac7">  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@`    .     .-::::` .     .    `@@@@@@@@@@@@@@@@@@@@@@@@@@@@@:   </text>
+  <text class="wipe" style="animation-delay:663ms" x="18" y="534.33" xml:space="preserve" textLength="582" lengthAdjust="spacing" font-size="10.10" fill="#adbac7"> :@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@:       ..  `-::: .      .    .%@@@@@@@@@@@@@@@@@@@@@@@@@@@@%   </text>
+  <text class="wipe" style="animation-delay:680ms" x="18" y="546.46" xml:space="preserve" textLength="582" lengthAdjust="spacing" font-size="10.10" fill="#adbac7"> %@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@=         .. `-:`              #@@@@@@@@@@@@@@@@@@@@@@@@@@@@@c  </text>
+</svg>

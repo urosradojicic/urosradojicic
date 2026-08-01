@@ -2,9 +2,13 @@
 # layout. Not part of the profile.
 preview.html
 
-# Intermediate from the portrait pipeline. The source photo is kept; the
-# prepped grayscale is derived and can always be regenerated.
-source/portrait-prepped.png
+# The portrait pipeline's inputs stay local. This repository is public, and
+# committing the original photograph would publish a full-resolution image of
+# a face for anyone to download — a different thing from publishing a 96x41
+# ASCII rendering of it. The generated SVG is committed; the source is not.
+# Remove this line if you would rather the pipeline be reproducible from a
+# fresh clone.
+source/
 
 __pycache__/
 *.pyc
