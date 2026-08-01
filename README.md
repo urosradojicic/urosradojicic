@@ -8,8 +8,8 @@
 
 <h3><code>uros@github ~ $ whoami</code></h3>
 
-<img src="./ascii-portrait.svg" width="365" alt="ASCII portrait of Uros Radojicic">
-<img src="./info-card.svg" width="487" alt="Role, education, stack and languages">
+<img src="./ascii-portrait.svg" width="350" alt="ASCII portrait of Uros Radojicic">
+<img src="./info-card.svg" width="467" alt="Role, education, stack and languages">
 
 <br><br>
 

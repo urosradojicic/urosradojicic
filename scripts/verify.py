@@ -159,14 +159,29 @@ for name, w_shown in asked.items():
     print(f"    {name:<18} {w_shown:>5.0f} x {nat[1] * scale:>5.1f}"
           f"   (natural {nat[0]:.0f} x {nat[1]:.0f}, scale {scale:.3f})")
 
-if {"ascii-portrait", "info-card", "contrib-heatmap"} <= shown.keys():
-    # The newline between the two <img> tags collapses to one space, ~4.4px at
-    # GitHub's 16px base font. That space is the gutter.
-    GUTTER = 4.4
+# Measured on the live profile, not assumed. The README column is not a fixed
+# width: it tracks the viewport as roughly min(viewport - 449, 846).
+#
+#   viewport 1152 -> container 703
+#   viewport 1280 -> container 831
+#   viewport 1920 -> container 846  (capped)
+#
+# 831 is the binding case: it is the narrowest container at which the two
+# panels should still share a row, and every wider viewport gets 846. Below
+# 1280 they stack, which is the intended responsive behaviour.
+#
+# An earlier revision was sized against an assumed ~860 column, passed here,
+# and wrapped on the live page. The number below is the one the browser
+# reported.
+CONTAINER = 831
+GUTTER = 4.4          # the newline between the two <img> tags, at 16px
+
+if {"ascii-portrait", "info-card"} <= shown.keys():
     row = shown["ascii-portrait"][0] + GUTTER + shown["info-card"][0]
-    check(abs(row - shown["contrib-heatmap"][0]) <= 6,
-          f"portrait + gutter + card = {row:.1f} lines up with the "
-          f'{shown["contrib-heatmap"][0]:.0f} wide panels')
+    slack = CONTAINER - row
+    check(slack >= 5,
+          f"portrait + gutter + card = {row:.1f} fits the {CONTAINER}px column "
+          f"with {slack:.1f}px to spare")
 
     dh = abs(shown["ascii-portrait"][1] - shown["info-card"][1])
     check(dh <= 12,
@@ -177,9 +192,11 @@ if {"contrib-heatmap", "shipped"} <= shown.keys():
     check(shown["contrib-heatmap"][0] == shown["shipped"][0],
           f'heatmap and shipped share a displayed width: '
           f'{shown["shipped"][0]:.0f}')
-
-check(all(w <= 880 for w, _ in shown.values()),
-      "nothing exceeds GitHub's ~880px README content width")
+    # These are wider than the column on purpose: max-width:100% scales them
+    # down to fill whatever it happens to be, at any viewport.
+    check(shown["contrib-heatmap"][0] >= CONTAINER,
+          f'full-width panels span the column at any size '
+          f'({shown["contrib-heatmap"][0]:.0f} >= {CONTAINER})')
 
 print("\n" + "=" * 62)
 if failures:

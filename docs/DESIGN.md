@@ -66,8 +66,26 @@ contributions on my profile* is enabled. No scraping recovers them.
 
 **Four tenths of a pixel wraps a row.** `368 + 4.4 + 488 = 860.4` in an 860
 container silently dropped the card onto its own line. Both images still
-rendered; the layout was just wrong. Widths are now 365 + 487, leaving ~2.6px
-slack. Verified by measuring `getBoundingClientRect()`, not by arithmetic.
+rendered; the layout was just wrong. Verified by measuring
+`getBoundingClientRect()`, not by arithmetic.
+
+**And the column is not 860.** Measured on the live profile:
+
+| viewport | README column |
+|---|---|
+| 1152 | 703 |
+| 1280 | **831** |
+| 1920 | 846 (capped) |
+
+Roughly `min(viewport - 449, 846)`. The first fix above was sized against an
+assumed ~860, passed the local harness, and wrapped anyway once pushed — the
+harness was only ever as good as the number it was pinned to. Widths are now
+350 + 467 = 821.4, which clears the binding 831 case by 9.6px and every wider
+viewport by more. Below 1280 the two panels stack, which is the intended
+responsive behaviour rather than a failure.
+
+The two full-width panels are authored at 860 on purpose: `max-width: 100%`
+scales them down to fill whatever the column happens to be, at any viewport.
 
 **Animations do not advance in a non-compositing document.** When
 `document.visibilityState === "hidden"` — a hidden pane, a headless run — CSS

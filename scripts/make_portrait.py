@@ -139,7 +139,7 @@ def main():
     svg, cols, rows, height = build(img)
     OUT.write_text(svg, encoding="utf-8")
 
-    shown_w = 365       # the width README.md asks for; verify.py checks this
+    shown_w = 350       # the width README.md asks for; verify.py checks this
     shown_h = height * shown_w / NAT_W
     print(f"{OUT.name}  ·  {cols}x{rows} glyphs  ·  {NAT_W}x{height:.0f} natural")
     print(f"renders {shown_w}x{shown_h:.0f} in the README")
