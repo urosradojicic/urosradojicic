@@ -1,25 +1,17 @@
 <div align="center">
 
-<h3><code>uros@github ~ $ ./contributions.sh</code></h3>
-
 <img src="./contrib-heatmap.svg" width="860" alt="GitHub contribution calendar for the last year">
 
 <br><br>
-
-<h3><code>uros@github ~ $ whoami</code></h3>
 
 <img src="./ascii-portrait.svg" width="350" alt="ASCII portrait of Uros Radojicic">
 <img src="./info-card.svg" width="467" alt="Role, education, stack and languages">
 
 <br><br>
 
-<h3><code>uros@github ~ $ ls ~/shipped</code></h3>
-
 <img src="./shipped.svg" width="860" alt="Projects shipped, with what each one is and its status">
 
 <br><br>
-
-<h3><code>uros@github ~ $ contact</code></h3>
 
 [**LinkedIn**](https://linkedin.com/in/urosradojicic) · [**Email**](mailto:urke5432@gmail.com) · Belgrade, Serbia
 
