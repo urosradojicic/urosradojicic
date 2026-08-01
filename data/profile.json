@@ -1,0 +1,56 @@
+{
+  "_comment": "Single source of content for info-card.svg and shipped.svg. Edit this, re-run scripts/build.py, commit. No Python needs touching.",
+
+  "handle": "uros@github",
+  "name": "Uros Radojicic",
+
+  "card": [
+    { "key": "Role",  "value": "Software Developer Intern @ Code IT" },
+    { "key": "Edu",   "value": "BASc Information Systems & Technologies, FON Belgrade" },
+    { "key": "Year",  "value": "9.27 / 10  ·  60 of 60 ECTS, first year" },
+    { "key": "Stack", "value": "TypeScript · React · Astro · Node · Python" },
+    { "key": "Data",  "value": "Supabase · PostgreSQL · Stripe" },
+    { "key": "Chain", "value": "Solana · Solidity · Hardhat" },
+    { "key": "Now",   "value": "ChainTrust — on-chain startup verification" },
+    { "key": "Langs", "value": "Serbian (native) · English (fluent) · Italian (basic)" },
+    { "key": "Reach", "value": "linkedin.com/in/urosradojicic" }
+  ],
+
+  "shipped": [
+    {
+      "name": "ChainTrust",
+      "what": "Solana · on-chain startup verification",
+      "status": "building into a company"
+    },
+    {
+      "name": "Travel Guide",
+      "what": "Astro · 14 countries, 5,113 places, 294 guides",
+      "status": "709 pages, live"
+    },
+    {
+      "name": "Internal portal",
+      "what": "pharmaceutical client, 3,000+ employees",
+      "status": "docs · comms · teams"
+    },
+    {
+      "name": "Atlas CRM",
+      "what": "AIESEC Serbia · 5 screens, Serbian UI",
+      "status": "shipped"
+    },
+    {
+      "name": "Bambino",
+      "what": "e-commerce · catalog, cart, checkout, orders",
+      "status": "client project"
+    },
+    {
+      "name": "AI Startup Generator",
+      "what": "one prompt to model, brand, site, financials",
+      "status": "hackathon"
+    },
+    {
+      "name": "Daily tracker",
+      "what": "habit tracking + productivity monitoring",
+      "status": "personal"
+    }
+  ]
+}

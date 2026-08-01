@@ -1,0 +1,9 @@
+# Local-only. Never installed by the daily workflow — see requirements-daily.txt.
+# Needed once, when the source photo changes.
+#
+# rembg pulls onnxruntime and downloads a ~176 MB segmentation model on first
+# run. Free, local, and the reason the portrait's silhouette reads at all
+# against a mid-tone background.
+pillow
+numpy
+rembg

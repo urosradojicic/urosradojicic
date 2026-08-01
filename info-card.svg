@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="490" height="337"
+     viewBox="0 0 490 337" role="img" aria-label="Uros Radojicic — Software Developer Intern @ Code IT">
+  <title>Uros Radojicic — Software Developer Intern @ Code IT</title>
+  <style>
+    text { font-family: ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,'Liberation Mono','DejaVu Sans Mono',monospace; white-space: pre; }
+    @keyframes wipe {
+      from { clip-path: inset(0 100% 0 0); }
+      to   { clip-path: inset(0 0 0 0); }
+    }
+    @keyframes fade {
+      from { opacity: 0; transform: translateY(4px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes pop {
+      from { opacity: 0; transform: translateY(-3px) scale(0.72); }
+      to   { opacity: 1; transform: translateY(0) scale(1); }
+    }
+    .wipe { animation: wipe .22s steps(24) both 1; }
+    .fade { animation: fade .34s ease-out both 1; }
+    /* transform-box: fill-box is load-bearing. Without it a percentage
+       transform-origin on an SVG shape resolves against the SVG root's origin,
+       so `scale` throws the cell across the canvas instead of growing it in
+       place. */
+    .pop  { animation: pop .3s ease-out both 1;
+             transform-box: fill-box; transform-origin: center; }
+
+    /* Readers who ask for reduced motion get the finished frame immediately. */
+    @media (prefers-reduced-motion: reduce) {
+      .wipe, .fade, .pop { animation-duration: 1ms !important;
+                            animation-delay: 0ms !important; }
+    }
+  </style>
+  <rect x="0.5" y="0.5" width="489" height="336" rx="9"
+        fill="#0d1117" stroke="#30363d"/>
+  <path d="M0.5 9.5a9 9 0 0 1 9-9h471a9 9 0 0 1 9 9v25H0.5z"
+        fill="#161b22"/>
+  <line x1="0.5" y1="34" x2="489.5" y2="34" stroke="#30363d"/>
+  <circle cx="18" cy="17.0" r="5.5" fill="#ff5f56"/><circle cx="36" cy="17.0" r="5.5" fill="#ffbd2e"/><circle cx="54" cy="17.0" r="5.5" fill="#27c93f"/>
+  <text x="245.0" y="21.0" text-anchor="middle"
+        font-family="ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,'Liberation Mono','DejaVu Sans Mono',monospace" font-size="11.5" fill="#8b949e">uros@github — whoami</text>
+  <text class="fade" style="animation-delay:0ms" x="18" y="62" font-size="12.5" font-weight="600" fill="#39d353">uros@github</text>
+  <line class="fade" style="animation-delay:60ms" x1="18" y1="69" x2="472" y2="69" stroke="#30363d"/>
+  <text class="fade" style="animation-delay:120ms" x="18" y="91" font-size="11.5" fill="#58a6ff">Role</text><text class="fade" style="animation-delay:120ms" x="70" y="91" font-size="11.5" fill="#c9d1d9">Software Developer Intern @ Code IT</text>
+  <text class="fade" style="animation-delay:175ms" x="18" y="115" font-size="11.5" fill="#58a6ff">Edu</text><text class="fade" style="animation-delay:175ms" x="70" y="115" font-size="11.5" fill="#c9d1d9">BASc Information Systems &amp; Technologies, FON Belgrade</text>
+  <text class="fade" style="animation-delay:230ms" x="18" y="139" font-size="11.5" fill="#58a6ff">Year</text><text class="fade" style="animation-delay:230ms" x="70" y="139" font-size="11.5" fill="#c9d1d9">9.27 / 10  ·  60 of 60 ECTS, first year</text>
+  <text class="fade" style="animation-delay:285ms" x="18" y="163" font-size="11.5" fill="#58a6ff">Stack</text><text class="fade" style="animation-delay:285ms" x="70" y="163" font-size="11.5" fill="#c9d1d9">TypeScript · React · Astro · Node · Python</text>
+  <text class="fade" style="animation-delay:340ms" x="18" y="187" font-size="11.5" fill="#58a6ff">Data</text><text class="fade" style="animation-delay:340ms" x="70" y="187" font-size="11.5" fill="#c9d1d9">Supabase · PostgreSQL · Stripe</text>
+  <text class="fade" style="animation-delay:395ms" x="18" y="211" font-size="11.5" fill="#58a6ff">Chain</text><text class="fade" style="animation-delay:395ms" x="70" y="211" font-size="11.5" fill="#c9d1d9">Solana · Solidity · Hardhat</text>
+  <text class="fade" style="animation-delay:450ms" x="18" y="235" font-size="11.5" fill="#58a6ff">Now</text><text class="fade" style="animation-delay:450ms" x="70" y="235" font-size="11.5" fill="#c9d1d9">ChainTrust — on-chain startup verification</text>
+  <text class="fade" style="animation-delay:505ms" x="18" y="259" font-size="11.5" fill="#58a6ff">Langs</text><text class="fade" style="animation-delay:505ms" x="70" y="259" font-size="11.5" fill="#c9d1d9">Serbian (native) · English (fluent) · Italian (basic)</text>
+  <text class="fade" style="animation-delay:560ms" x="18" y="283" font-size="11.5" fill="#58a6ff">Reach</text><text class="fade" style="animation-delay:560ms" x="70" y="283" font-size="11.5" fill="#c9d1d9">linkedin.com/in/urosradojicic</text>
+  <text class="fade" style="animation-delay:615ms" x="18" y="311" font-size="11.5" fill="#39d353">$ <tspan fill="#8b949e">open to internships and junior roles</tspan></text>
+</svg>

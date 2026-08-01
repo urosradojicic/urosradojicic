@@ -1,0 +1,6 @@
+# Everything the daily workflow needs — and nothing else.
+# The portrait pipeline's dependencies live in requirements-portrait.txt and are
+# never installed in CI: pulling ~250 MB of ONNX runtime every morning to scrape
+# one HTML table would be absurd.
+requests==2.32.3
+beautifulsoup4==4.12.3

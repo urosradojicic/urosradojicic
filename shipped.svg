@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="860" height="324"
+     viewBox="0 0 860 324" role="img" aria-label="Shipped projects: ChainTrust, Travel Guide, Internal portal, Atlas CRM, Bambino, AI Startup Generator, Daily tracker">
+  <title>Shipped projects: ChainTrust, Travel Guide, Internal portal, Atlas CRM, Bambino, AI Startup Generator, Daily tracker</title>
+  <style>
+    text { font-family: ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,'Liberation Mono','DejaVu Sans Mono',monospace; white-space: pre; }
+    @keyframes wipe {
+      from { clip-path: inset(0 100% 0 0); }
+      to   { clip-path: inset(0 0 0 0); }
+    }
+    @keyframes fade {
+      from { opacity: 0; transform: translateY(4px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes pop {
+      from { opacity: 0; transform: translateY(-3px) scale(0.72); }
+      to   { opacity: 1; transform: translateY(0) scale(1); }
+    }
+    .wipe { animation: wipe .22s steps(24) both 1; }
+    .fade { animation: fade .34s ease-out both 1; }
+    /* transform-box: fill-box is load-bearing. Without it a percentage
+       transform-origin on an SVG shape resolves against the SVG root's origin,
+       so `scale` throws the cell across the canvas instead of growing it in
+       place. */
+    .pop  { animation: pop .3s ease-out both 1;
+             transform-box: fill-box; transform-origin: center; }
+
+    /* Readers who ask for reduced motion get the finished frame immediately. */
+    @media (prefers-reduced-motion: reduce) {
+      .wipe, .fade, .pop { animation-duration: 1ms !important;
+                            animation-delay: 0ms !important; }
+    }
+  </style>
+  <rect x="0.5" y="0.5" width="859" height="323" rx="9"
+        fill="#0d1117" stroke="#30363d"/>
+  <path d="M0.5 9.5a9 9 0 0 1 9-9h841a9 9 0 0 1 9 9v25H0.5z"
+        fill="#161b22"/>
+  <line x1="0.5" y1="34" x2="859.5" y2="34" stroke="#30363d"/>
+  <circle cx="18" cy="17.0" r="5.5" fill="#ff5f56"/><circle cx="36" cy="17.0" r="5.5" fill="#ffbd2e"/><circle cx="54" cy="17.0" r="5.5" fill="#27c93f"/>
+  <text x="430.0" y="21.0" text-anchor="middle"
+        font-family="ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,'Liberation Mono','DejaVu Sans Mono',monospace" font-size="11.5" fill="#8b949e">uros@github — shipped</text>
+  <text class="fade" style="animation-delay:0ms" x="18" y="62" font-size="11.5" fill="#39d353">$ <tspan fill="#c9d1d9">ls ~/shipped</tspan></text>
+  <line class="fade" style="animation-delay:60ms" x1="18" y1="70" x2="842" y2="70" stroke="#30363d"/>
+  <text class="fade" style="animation-delay:140ms" x="18" y="94" font-size="11.5" fill="#39d353">▸</text><text class="fade" style="animation-delay:140ms" x="32" y="94" font-size="11.5" font-weight="600" fill="#c9d1d9">ChainTrust</text><text class="fade" style="animation-delay:140ms" x="202" y="94" font-size="11.5" fill="#8b949e">Solana · on-chain startup verification</text><text class="fade" style="animation-delay:140ms" x="842" y="94" font-size="11.5" text-anchor="end" fill="#58a6ff">building into a company</text>
+  <text class="fade" style="animation-delay:210ms" x="18" y="120" font-size="11.5" fill="#39d353">▸</text><text class="fade" style="animation-delay:210ms" x="32" y="120" font-size="11.5" font-weight="600" fill="#c9d1d9">Travel Guide</text><text class="fade" style="animation-delay:210ms" x="202" y="120" font-size="11.5" fill="#8b949e">Astro · 14 countries, 5,113 places, 294 guides</text><text class="fade" style="animation-delay:210ms" x="842" y="120" font-size="11.5" text-anchor="end" fill="#58a6ff">709 pages, live</text>
+  <text class="fade" style="animation-delay:280ms" x="18" y="146" font-size="11.5" fill="#39d353">▸</text><text class="fade" style="animation-delay:280ms" x="32" y="146" font-size="11.5" font-weight="600" fill="#c9d1d9">Internal portal</text><text class="fade" style="animation-delay:280ms" x="202" y="146" font-size="11.5" fill="#8b949e">pharmaceutical client, 3,000+ employees</text><text class="fade" style="animation-delay:280ms" x="842" y="146" font-size="11.5" text-anchor="end" fill="#58a6ff">docs · comms · teams</text>
+  <text class="fade" style="animation-delay:350ms" x="18" y="172" font-size="11.5" fill="#39d353">▸</text><text class="fade" style="animation-delay:350ms" x="32" y="172" font-size="11.5" font-weight="600" fill="#c9d1d9">Atlas CRM</text><text class="fade" style="animation-delay:350ms" x="202" y="172" font-size="11.5" fill="#8b949e">AIESEC Serbia · 5 screens, Serbian UI</text><text class="fade" style="animation-delay:350ms" x="842" y="172" font-size="11.5" text-anchor="end" fill="#58a6ff">shipped</text>
+  <text class="fade" style="animation-delay:420ms" x="18" y="198" font-size="11.5" fill="#39d353">▸</text><text class="fade" style="animation-delay:420ms" x="32" y="198" font-size="11.5" font-weight="600" fill="#c9d1d9">Bambino</text><text class="fade" style="animation-delay:420ms" x="202" y="198" font-size="11.5" fill="#8b949e">e-commerce · catalog, cart, checkout, orders</text><text class="fade" style="animation-delay:420ms" x="842" y="198" font-size="11.5" text-anchor="end" fill="#58a6ff">client project</text>
+  <text class="fade" style="animation-delay:490ms" x="18" y="224" font-size="11.5" fill="#39d353">▸</text><text class="fade" style="animation-delay:490ms" x="32" y="224" font-size="11.5" font-weight="600" fill="#c9d1d9">AI Startup Generator</text><text class="fade" style="animation-delay:490ms" x="202" y="224" font-size="11.5" fill="#8b949e">one prompt to model, brand, site, financials</text><text class="fade" style="animation-delay:490ms" x="842" y="224" font-size="11.5" text-anchor="end" fill="#58a6ff">hackathon</text>
+  <text class="fade" style="animation-delay:560ms" x="18" y="250" font-size="11.5" fill="#39d353">▸</text><text class="fade" style="animation-delay:560ms" x="32" y="250" font-size="11.5" font-weight="600" fill="#c9d1d9">Daily tracker</text><text class="fade" style="animation-delay:560ms" x="202" y="250" font-size="11.5" fill="#8b949e">habit tracking + productivity monitoring</text><text class="fade" style="animation-delay:560ms" x="842" y="250" font-size="11.5" text-anchor="end" fill="#58a6ff">personal</text>
+  <line class="fade" style="animation-delay:630ms" x1="18" y1="278" x2="842" y2="278" stroke="#30363d"/>
+  <text class="fade" style="animation-delay:670ms" x="18" y="298" font-size="11.5" fill="#8b949e">7 shipped  ·  client, hackathon and solo work  ·  some projects omitted under client confidentiality</text>
+</svg>
