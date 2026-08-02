@@ -4,8 +4,8 @@
     "from": "2025-08-03",
     "to": "2026-08-02"
   },
-  "total": 256,
-  "stated_total": 256,
+  "total": 257,
+  "stated_total": 257,
   "active_days": 37,
   "best_day": {
     "date": "2026-04-11",
@@ -1836,7 +1836,7 @@
     },
     {
       "date": "2026-08-02",
-      "count": 1,
+      "count": 2,
       "level": 1
     }
   ]
