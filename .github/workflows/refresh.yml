@@ -10,14 +10,16 @@ name: Refresh profile
 
 "on":
   schedule:
-    # Every six hours at :17 — 00:17, 06:17, 12:17, 18:17 UTC, which is
-    # 02:17 / 08:17 / 14:17 / 20:17 in Belgrade. Off the hour, where scheduled
+    # Once a day, 06:17 UTC (08:17 in Belgrade). Off the hour, where scheduled
     # runs queue up worst.
     #
-    # Four a day is plenty: the graph's resolution is one day, so today's
-    # square lights up on the first commit and later ones only deepen the shade
-    # when they cross a bucket threshold.
-    - cron: "17 */6 * * *"
+    # One run a day means at most one commit a day, which is the floor for a
+    # correct graph anyway: the calendar is a rolling 371-day window, so the
+    # dates shift every day whether or not the counts do. Running more often
+    # bought nothing — the graph's resolution is one day, so today's square
+    # lights up on the first commit and later ones only deepen the shade when
+    # they cross a bucket threshold.
+    - cron: "17 6 * * *"
   workflow_dispatch: {}
   push:
     branches: [main]
