@@ -2,10 +2,10 @@
   "user": "urosradojicic",
   "range": {
     "from": "2025-08-31",
-    "to": "2026-08-30"
+    "to": "2026-08-31"
   },
-  "total": 300,
-  "stated_total": 300,
+  "total": 301,
+  "stated_total": 301,
   "active_days": 65,
   "best_day": {
     "date": "2026-04-11",
@@ -1836,8 +1836,13 @@
     },
     {
       "date": "2026-08-30",
-      "count": 3,
+      "count": 4,
       "level": 1
+    },
+    {
+      "date": "2026-08-31",
+      "count": 0,
+      "level": 0
     }
   ]
 }
