@@ -2,17 +2,17 @@
   "user": "urosradojicic",
   "range": {
     "from": "2025-09-21",
-    "to": "2026-09-21"
+    "to": "2026-09-22"
   },
-  "total": 326,
-  "stated_total": 326,
-  "active_days": 86,
+  "total": 327,
+  "stated_total": 327,
+  "active_days": 87,
   "best_day": {
     "date": "2026-04-11",
     "count": 20
   },
-  "current_streak": 53,
-  "longest_streak": 53,
+  "current_streak": 54,
+  "longest_streak": 54,
   "days": [
     {
       "date": "2025-09-21",
@@ -1841,6 +1841,11 @@
     },
     {
       "date": "2026-09-21",
+      "count": 1,
+      "level": 1
+    },
+    {
+      "date": "2026-09-22",
       "count": 0,
       "level": 0
     }
